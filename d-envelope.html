@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="logs">
+      <h4>Logs:</h4>
+      <pre class="logs-text logs-text-presentation"></pre>
+    </div>
+
+    <ul>
+      <li>
+        <h3>Filter</h3>
+        Cutoff Frequency: <br>
+        <input id="cutoff" type="range" min="0" max="100" value="100"> <br />
+        Q (Resonance): <br>
+        <input id="resonance" type="range" min="0" max="100" value="0">
+      </li>
+      <li>
+        <h3>Amplitude</h3>
+        Attack: <br>
+        <input id="attack" type="range" min="0" max="100" value="0"> <br />
+        Release: <br>
+        <input id="release" type="range" min="0" max="100" value="0">
+      </li>
+    </ul>
+
+    <button type="button" onclick="envelope()">Play</button>
+
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/d-envelope.js"></script>
+  </body>
+</html>

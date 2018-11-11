@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="logs">
+      <h4>Logs:</h4>
+      <pre class="logs-text logs-text-presentation"></pre>
+    </div>
+
+    <h3>Filter</h3>
+    <ul>
+      <li>
+        Cutoff Frequency: <br>
+        <input id="cutoff" type="range" min="0" max="100" value="100"> <br />
+        Q (Resonance): <br>
+        <input id="resonance" type="range" min="0" max="100" value="0">
+      </li>
+    </ul>
+    <button type="button" onclick="filter()">Play</button>
+
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/c-filter.js"></script>
+  </body>
+</html>
